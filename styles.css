@@ -1,0 +1,112 @@
+/* Custom */
+:root {
+    --clr-orange: hsl(25, 97%, 53%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-grey: hsl(217, 12%, 63%);
+    --clr-blue: hsl(215, 30%, 30%);
+    --clr-dark-blue: hsl(213, 19%, 18%);
+    --clr-very-dark-blue: hsl(216, 12%, 8%);
+
+    --fw-light: 100;
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+/* General */
+body {
+    /* Text */
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: var(--fw-light);
+    color: var(--clr-white);
+    text-align: center;
+
+    /* Background */
+    background-color: var(--clr-very-dark-blue);
+
+    /* Alignment */
+    justify-content: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* Box */
+.grid-box {
+    display: grid;
+    align-items: center;
+    max-width: 500px;
+    background-color: var(--clr-dark-blue);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.grid-item {
+    margin: 1em auto;
+}
+
+/* Numbers */
+.number-grid-box {
+    display: grid;
+    gap: .45em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+option {
+    color: var(--clr-white);
+    border-radius: 3em;
+    font-size: 12px;
+    padding: 11px;
+}
+
+.number {
+    background-color: var(--clr-blue);
+    border-color: var(--clr-blue);
+}
+
+.number:hover {
+    background-color: var(--clr-light-grey);
+    border-color: var(--clr-light-grey);
+}
+
+.number:focus {
+    background-color: var(--clr-orange);
+    border-color: var(--clr-orange);
+}
+
+/* Submit */
+.submit-button {
+    color: var(--clr-white);
+    border-radius: 1rem;
+    font-size: 15px;
+    background-color: var(--clr-orange);
+    border-color: var(--clr-orange);
+    text-transform: uppercase;
+    padding: 10px 5em;
+    border-width: thin;
+}
+
+.submit-button:hover {
+    color: var(--clr-orange);
+    background-color: var(--clr-white);
+}
+
+/* Selection */
+.selected {
+    color: var(--clr-orange);
+    border-radius: 1em;
+    padding: .75em;
+    background-color: var(--clr-blue);
+}
+
+/* Attribution */
+.attribution {
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
