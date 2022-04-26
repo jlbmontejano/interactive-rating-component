@@ -17,9 +17,12 @@
 </head>
 
 <body>
-
   <!-- Rating state start -->
-  <div class="grid-box">
+  <div class="grid-box" id="asking-box">
+    <div class="grid-item">
+      <img src="images/icon-star.svg" alt="icon-star" class="star">
+      <span class="circle"></span>
+    </div>
     <div class="grid-item">
       <h1>How did we do?</h1>
     </div>
@@ -28,39 +31,37 @@
         offering!</p>
     </div>
 
-    <div class="grid-item">
-      <form>
-        <label for="rating"></label>
-        <div class="number-grid-box">
-          <option class="number" id="1" value="1">1</option>
-          <option class="number" id="2" value="2">2</option>
-          <option class="number" id="3" value="3">3</option>
-          <option class="number" id="4" value="4">4</option>
-          <option class="number" id="5" value="5">5</option>
-        </div>
+    <div class="grid-item aligned-center">
+
+      <label class='form-control'><input type='radio' name='number' value='1' required>1</label>
+      <label class='form-control'><input type='radio' name='number' value='2'>2</label>
+      <label class='form-control'><input type='radio' name='number' value='3'>3</label>
+      <label class='form-control'><input type='radio' name='number' value='4'>4</label>
+      <label class='form-control'><input type='radio' name='number' value='5'>5</label>
     </div>
-    <div class="grid-item">
-      <input type='submit' class="input submit-button">
-    </div>
-    </form>
 
 
+      <div class="grid-item">
+        <button class="submit-button" id="submit-button">Submit</button>
+      </div>
 
+
+    
   </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-  <div class="grid-box">
-    <div class="grid-item">
+  <div class="grid-box" id="thank-you-box">
+    <div class="grid-item aligned-center">
       <img src="images/illustration-thank-you.svg" alt="thank-you">
     </div>
-    <div class="grid-item">
-      <h4 class="selected">You selected
+    <div class="grid-item aligned-center">
+      <h4 class="selected" id="final-rating">You selected
         <!-- Add rating here --> out of 5
       </h4>
     </div>
-    <div class="grid-item">
+    <div class="grid-item aligned-center">
       <h1>Thank you!</h1>
     </div>
     <div class="grid-item">
@@ -70,12 +71,10 @@
   </div>
   <!-- Thank you state end -->
 
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Jorge Buenrostro</a>.
-    </div>
-  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Jorge Buenrostro</a>.
+  </div>
+
   <script src="script.js"></script>
 </body>
 
