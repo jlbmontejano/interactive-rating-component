@@ -147,14 +147,13 @@ label:hover {
     color: var(--clr-dark-blue);
     background-color: var(--clr-light-grey);
     border-color: var(--clr-dark-blue);
-    cursor: pointer;
 }
 
 .disabled.submit-button:hover {
     color: var(--clr-dark-blue);
     background-color: var(--clr-light-grey);
     border-color: var(--clr-dark-blue);
-    cursor: pointer;
+    cursor: default;
 }
 
 .disabled:active {
