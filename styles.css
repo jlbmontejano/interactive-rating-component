@@ -112,6 +112,7 @@ label {
 
 label:hover {
     background-color: var(--clr-light-grey);
+    cursor: pointer;
 }
 
 /* Submit */
@@ -125,16 +126,39 @@ label:hover {
     text-transform: uppercase;
     padding: 10px 5em;
     border-width: thin;
-    width: 100%
+    width: 100%;
 }
 
 .submit-button:hover {
     color: var(--clr-orange);
     background-color: var(--clr-white);
+    cursor: pointer;
+}
+
+.submit-button:active {
+    transform: translateY(2px);
 }
 
 #thank-you-box {
     display: none;
+}
+
+.disabled {
+    color: var(--clr-dark-blue);
+    background-color: var(--clr-light-grey);
+    border-color: var(--clr-dark-blue);
+    cursor: pointer;
+}
+
+.disabled.submit-button:hover {
+    color: var(--clr-dark-blue);
+    background-color: var(--clr-light-grey);
+    border-color: var(--clr-dark-blue);
+    cursor: pointer;
+}
+
+.disabled:active {
+    transform: none;
 }
 
 /* Selection */
