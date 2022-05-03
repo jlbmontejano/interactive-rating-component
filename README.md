@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML, CSS & JavaScript
 - CSS custom properties
 - CSS Grid
 - Mobile-first workflow
