@@ -44,6 +44,7 @@ I know I still have a lot to learn and that excites me. I will continue to work 
 
 ## Author
 
+- LinkedIn - [@jlbmontejano](https://www.linkedin.com/in/jlbmontejano/)
 - Frontend Mentor - [@jlbmontejano](https://www.frontendmentor.io/profile/jlbmontejano)
 
 ## Acknowledgments
